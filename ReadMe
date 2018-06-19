@@ -1,0 +1,15 @@
+源生项目集成react native
+按照官方文档集成（不知道为什么index.js不行,改成index.androi.js才行）
+1.添加依赖(依赖路径要正确,官方文档路径不对)
+2.npm int命令生成package.json文件
+    根据提示更新npm i -S XX(关于Windows下载了IOS的支持库警告可忽略)
+3.install --save react react-native命令用于安装 React、React Native 相关文件
+4.创建.flowconfig文件
+5.将“start": "node node_modules/react-native/local-cli/cli.js start"添加到scripts节点下
+6.添加index.android.js
+7.添加网络权限管理，开发者菜单声明
+8.创建一个ReactRootView(相当于react native配置文件)
+9.在 android/app/src/main 目录下创建一个 assets空文件夹
+    运行指令:react-native bundle --platform android --dev false --entry-file index.android.js
+    --bundle-output app/src/main/assets/index.android.bundle --assets-dest app/src/main/res/
+
