@@ -1,5 +1,6 @@
 'use strict';
 import {AppRegistry} from 'react-native';
-import MyDimensions from './js/components/Dimensions';
+import Root from './js/rootRouter';
+import Dice from './js/components/dice'
 
-AppRegistry.registerComponent('MyReactNativeApp', () => MyDimensions);
+AppRegistry.registerComponent('MyReactNativeApp', () => Dice);

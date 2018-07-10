@@ -13,6 +13,8 @@
     "eslint": "^3.17.0",
     "native": "^0.3.3",
     "react": "^16.3.1",
-    "react-native": "^0.55.4"
+    "react-native": "^0.55.4",
+    "react-native-deprecated-custom-components": "^0.1.2",
+    "react-router": "^4.3.1"
   }
 }

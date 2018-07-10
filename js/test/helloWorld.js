@@ -6,7 +6,7 @@ import {
   View
 } from 'react-native';
 
-class HelloWorld extends React.Component {
+export default class HelloWorld extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -15,6 +15,7 @@ class HelloWorld extends React.Component {
     )
   }
 }
+
 var styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -27,4 +28,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('MyReactNativeApp', () => HelloWorld);
+AppRegistry.registerComponent('HelloWorld', () => HelloWorld);

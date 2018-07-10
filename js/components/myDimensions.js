@@ -1,23 +1,21 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 
 import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Dimensions
 } from 'react-native';
 
-//首先要导入Dimensions包
-var Dimensions = require('Dimensions');
-
-class MyDimensions extends Component {
+export default class MyDimensions extends Component {
     render() {
         return (
             <View style={styles1.container}>
-               {/*React Native中获取宽高及分辨率方法*/}
+                {/*React Native中获取宽高及分辨率方法*/}
                 <Text>当前屏幕的宽度:{Dimensions.get('window').width}</Text>
                 <Text>当前屏幕的高度:{Dimensions.get('window').height}</Text>
-                <Text>当前屏幕的分辨率:{Dimensions.get('window').scale }</Text>
+                <Text>当前屏幕的分辨率:{Dimensions.get('window').scale}</Text>
             </View>
         );
     }
@@ -32,4 +30,4 @@ const styles1 = StyleSheet.create({
     },
 });
 
-AppRegistry.registerComponent('MyDimensions',()=>MyDimensions);
+AppRegistry.registerComponent('MyDimensions', () => MyDimensions);

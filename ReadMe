@@ -12,4 +12,10 @@
 9.在 android/app/src/main 目录下创建一个 assets空文件夹
     运行指令:react-native bundle --platform android --dev false --entry-file index.android.js
     --bundle-output app/src/main/assets/index.android.bundle --assets-dest app/src/main/res/
+##2018/07/10更新
+10.打包指令(好像不能成功(＾－＾)V)
+.\gradlew clean assembleRelease -x bundleReleaseJsAndAssets
+
+react路由跳转
+npm install -S react-router
 

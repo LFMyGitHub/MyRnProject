@@ -1,0 +1,5 @@
+1.Uncaught Error: Element type is invalid: expected a string (for built-in components)
+or a class/function (for composite components) but got: object. You likely forgot to export your
+component from the file it's defined in.
+没有export default
+export用于对外输出本模块（一个文件可以理解为一个模块）变量的接口
